@@ -1,3 +1,12 @@
+.important{
+	color: red;
+	}
+.notasimportant{
+	color: yellow;
+	}
+.lowpriority{
+	color: green;
+	}
 .done{
 	text-decoration: line-through;
 	}
