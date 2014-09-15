@@ -10,3 +10,6 @@
 .lowpriority{
 	color: green;
 	}
+ ul.checkmark li:before{
+    content: '✔';   
+ }
