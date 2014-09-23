@@ -37,7 +37,8 @@ div{
          background-color: blue;
          top: 0px;
          left: 5px
+         width: 100%;
       }
       #navbar {
-      type: inline;
+      position: inline;
       }
