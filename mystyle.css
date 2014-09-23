@@ -17,8 +17,7 @@ div{
     position: fixed;
     top: 0px;
     left: 5px;
-    margin-bottom: 50px;
-    height: 25px;
+    height: 50px;
     -webkit-animation-name: myfirst;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 5s;
@@ -38,3 +37,6 @@ div{
  li.navbar {
       display: inline;
       }
+#abc {
+margin-top:50px;
+}
