@@ -40,5 +40,5 @@ div{
          width: 100%;
       }
       #navbar {
-      position: inline;
+      display: inline;
       }
