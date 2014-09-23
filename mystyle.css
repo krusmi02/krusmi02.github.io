@@ -16,7 +16,7 @@ div{
     background: blue;
     position: fixed;
     top: 0px;
-    left: 5px;
+    left: 0px;
     height: 50px;
     -webkit-animation-name: myfirst;
     -webkit-animation-duration: 5s;
