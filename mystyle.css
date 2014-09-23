@@ -11,24 +11,21 @@ h4{
 	background-color: lightgrey;
 	}
 	
-div {
+div{
     width: 100%;
     height: 20px;
-    background: red;
-    -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+    background: blue;
+    position: relative;
+    -webkit-animation-name: myfirst;
     -webkit-animation-iteration-count: infinite;
-    animation: myfirst 5s;
+    -webkit-animation-duration: 5s;
 }
-
-/* Chrome, Safari, Opera */
 @-webkit-keyframes myfirst {
     0%   {background: blue;}
     25%  {background: purple;}
     50%  {background: blue;}
     100% {background: green;}
 }
-
-/* Standard syntax */
 @keyframes myfirst {
     0%   {background: blue;}
     25%  {background: purple;}
