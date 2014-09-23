@@ -32,4 +32,12 @@ div{
     50%  {background: blue;}
     100% {background: green;}
 }	
-	
+	      #sticky {
+         position: fixed;
+         background-color: blue;
+         top: 0px;
+         left: 5px
+      }
+      #navbar {
+      type: inline;
+      }
