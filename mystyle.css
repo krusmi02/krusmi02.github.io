@@ -17,6 +17,7 @@ div{
     position: fixed;
     top: 0px;
     left: 5px;
+    margin-bottom: 50px;
     -webkit-animation-name: myfirst;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 5s;
@@ -33,6 +34,6 @@ div{
     50%  {background: blue;}
     100% {background: green;}
 }
- ol.navbar {
+ li.navbar {
       display: inline;
       }
