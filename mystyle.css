@@ -13,7 +13,6 @@ h4{
 	
 div{
     width: 100%;
-    height: 20px;
     background: blue;
     position: fixed;
     top: 0px;
@@ -34,6 +33,6 @@ div{
     50%  {background: blue;}
     100% {background: green;}
 }
- #navbar {
+ ol.navbar {
       display: inline;
       }
