@@ -15,7 +15,9 @@ div{
     width: 100%;
     height: 20px;
     background: blue;
-    position: relative;
+    position: fixed;
+    top: 0px;
+    left: 5px;
     -webkit-animation-name: myfirst;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 5s;
@@ -31,14 +33,7 @@ div{
     25%  {background: purple;}
     50%  {background: blue;}
     100% {background: green;}
-}	
-	      #sticky {
-         position: fixed;
-         background-color: blue;
-         top: 0px;
-         left: 5px
-         width: 100%;
-      }
-      #navbar {
+}
+ #navbar {
       display: inline;
       }
