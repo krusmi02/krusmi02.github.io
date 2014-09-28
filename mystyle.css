@@ -27,6 +27,7 @@ div{
     -webkit-animation-name: myfirst;
     -webkit-animation-duration: 5s;
     font-size: 16pt;
+    text-top: -25
 }
 @-webkit-keyframes myfirst {
     0%   {background: purple;}
@@ -42,6 +43,7 @@ div{
 }
  li.navbar {
       display: inline;
+      position: absolute;
       margin-top: 3px;
       }
 #abc {
