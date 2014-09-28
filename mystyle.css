@@ -42,11 +42,10 @@ div{
 }
  li.navbar {
       display: inline;
-      margin: 0px
-      padding: 10px
-      border:0px;
             }
-     
+ ol.margining {
+ 	margin: 5px
+ 	}    
 #abc {
 margin-top:140px;
 }
