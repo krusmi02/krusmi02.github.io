@@ -18,7 +18,7 @@ header {
          }
 div{
     width: 100%;
-    background: purple;
+    background: tan;
     position: fixed;
     top: 70px;
     left: 0px;
@@ -31,21 +31,21 @@ div{
 @-webkit-keyframes myfirst {
     0%   {background: purple;}
     25%  {background: blue;}
-    50%  {background: green;}
-    100% {background: purple;}
+    50%  {background: white;}
+    100% {background: tan;}
 }
 @keyframes myfirst {
     0%   {background: purple;}
     25%  {background: blue;}
-    50%  {background: green;}
-    100% {background: purple;}
+    50%  {background: white;}
+    100% {background: tan;}
 }
  li.navbar {
       display: inline;
             }
    
 #abc {
-margin-top:140px;
+margin-top:120px;
 }
         a:hover { 
             background-color: navy;
