@@ -18,7 +18,7 @@ header {
          }
 div{
     width: 100%;
-    background: tan;
+    background: white;
     position: fixed;
     top: 70px;
     left: 0px;
@@ -29,15 +29,15 @@ div{
     text-top: -25
 }
 @-webkit-keyframes myfirst {
-    0%   {background: blue;}
-    25%  {background: purple;}
-    50%  {background: blue;}
+    0%   {background: lightblue;}
+    25%  {background: lightpurple;}
+    50%  {background: lightblue;}
     100% {background: white;}
 }
 @keyframes myfirst {
-    0%   {background: blue;}
-    25%  {background: purple;}
-    50%  {background: blue;}
+    0%   {background: lightblue;}
+    25%  {background: lightpurple;}
+    50%  {background: lightblue;}
     100% {background: white;}
 }
  li.navbar {
