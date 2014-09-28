@@ -9,7 +9,7 @@ h4{
 }
 header {
              position: fixed;
-             background-color: rgb(1000,180,150);
+             background-color: rgb(0,180,150);
              top: 0px;
              left: 0px;
              width: 100%;
@@ -44,7 +44,7 @@ div{
       display: inline;
       }
 #abc {
-margin-top:150px;
+margin-top:140px;
 }
         a:hover { 
             background-color: navy;
