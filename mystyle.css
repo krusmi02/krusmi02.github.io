@@ -18,7 +18,7 @@ h4{
 	
 div{
     width: 100%;
-    background: blue;
+    background: purple;
     position: fixed;
     top: 20px;
     left: 0px;
@@ -27,22 +27,22 @@ div{
     -webkit-animation-duration: 5s;
 }
 @-webkit-keyframes myfirst {
-    0%   {background: blue;}
-    25%  {background: purple;}
-    50%  {background: blue;}
-    100% {background: green;}
+    0%   {background: purple;}
+    25%  {background: blue;}
+    50%  {background: green;}
+    100% {background: purple;}
 }
 @keyframes myfirst {
-    0%   {background: blue;}
-    25%  {background: purple;}
-    50%  {background: blue;}
-    100% {background: green;}
+    0%   {background: purple;}
+    25%  {background: blue;}
+    50%  {background: green;}
+    100% {background: purple;}
 }
  li.navbar {
       display: inline;
       }
 #abc {
-margin-top:50px;
+margin-top:70px;
 }
         a:hover { 
             background-color: navy;
