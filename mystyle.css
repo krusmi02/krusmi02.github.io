@@ -26,8 +26,7 @@ div{
     height: 50px;
     -webkit-animation-name: myfirst;
     -webkit-animation-duration: 5s;
-    font-size: 14pt;
-    padding: 5px;
+    font-size: 16pt;
 }
 @-webkit-keyframes myfirst {
     0%   {background: purple;}
