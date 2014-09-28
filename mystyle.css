@@ -43,9 +43,14 @@ div{
 }
  li.navbar {
       display: inline;
-      position: absolute;
       margin-top: 3px;
       }
+#1{
+	top: -25px;
+	}
+#2{
+#3{
+#4{      
 #abc {
 margin-top:140px;
 }
