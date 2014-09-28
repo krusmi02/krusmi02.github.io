@@ -23,7 +23,7 @@ div{
     position: fixed;
     top: 70px;
     left: 0px;
-    height: 30px;
+    height: 20px;
     -webkit-animation-name: myfirst;
     -webkit-animation-duration: 5s;
     font-size: 16pt;
