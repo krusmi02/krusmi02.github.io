@@ -57,12 +57,12 @@ section {
      width: 305px;
      height: 500px;
      background-color: #bbbbbb;
-     border-right: black;
      color: black;
          }
 aside {
       float: left;
       width: 65%;
       height: 500px;
+      border-left: black;
    
          }   
