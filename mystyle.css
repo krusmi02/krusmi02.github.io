@@ -55,6 +55,7 @@ a:hover {
 section {
      float: left;
      width: 305px;
+     height: 500px;
      background-color: #bbbbbb;
      border-right: black;
      color: black;
@@ -62,5 +63,6 @@ section {
 aside {
       float: left;
       width: 65%;
+      height: 500px;
    
          }   
