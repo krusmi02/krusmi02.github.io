@@ -1,4 +1,4 @@
-h1{
+#8{
 	color: white;
 }
 body{
@@ -45,13 +45,7 @@ div{
             }
  li.soprano{
  display: inline;
- }           
-  #8{
-   font-size: 24pt;
-   }
-   #9{
-   font-size:16pt;
-   }  
+ }            
 #abc {
 margin-top:110px;
 }
