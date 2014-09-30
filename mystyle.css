@@ -48,6 +48,9 @@ div{
 margin-top:110px;
 height: 250px;
 }
+#performance{
+font-size: 12pt;
+}
 a:hover { 
      background-color: navy;
      color: white;
