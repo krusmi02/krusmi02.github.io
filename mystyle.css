@@ -55,14 +55,14 @@ a:hover {
      color: white;
      }
 section {
-     float: right;
+     float: leftt;
      width: 25%;
      height: 100%;
      background-color: #bbbbbb;
      color: black;
          }
 aside {
-      float: right;
+      float: leftt;
       width: 65%;
       height: 500px;
       border-left: black;
