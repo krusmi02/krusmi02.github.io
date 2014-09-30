@@ -58,7 +58,7 @@ a:hover {
              height: 100%;
              background-color: #bbbbbb;
              color: black;
-             border-right: black;
+             border-right: solid black;
          }
          aside {
              float: left;
