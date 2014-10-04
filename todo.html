@@ -1,22 +1,46 @@
 <html>
-<head>
-<link rel="stylesheet" href="todo.css" type="text/css">
-</head>
-<body>
-	<p class="important">High Priority</p>
-	<p class="notasimportant">Medium Priority</p>
-	<p class="lowpriority">Low Priority</p>
-	<ul type=circle>
-	<li class="notasimportant">Practice Vocal Lessons</li>
-	<li class="notasimportant">Practice Vocal Coaching</li>
-	<li class="lowpriority">Practice Opera Scenes</li>
-	<p class="done">Finish CS 130 Homework</>
-	<li class="done">Do HR Simulation</li>
-	<li class="done">Print off Creativity Quiz</li>
-	<li class="lowpriority">Get ready for Messiah audition</li>
-	<li class="important">Listen to Rite of Spring</li>
-	<li class="important">Contemporary Paper</li>
-	<li class="important">Listen to Contemporary Paper music</li>
-	</ul>
-</body>
-</html>
+     <head>
+         <style>
+             header{
+                 position: fixed;
+                 background-color: #bbb;
+                 top: 0px;
+                 left: 0 px;
+                 width: 100%;
+                 height: 40px;
+                 font-size: 24pt;
+                 color: white;
+             }
+             ul {
+                 background-color: lightblue;
+                 padding-top: 30px;
+                 padding-bottom: 5px;
+                 width: 75%;
+                 margin-left: 12.5%;
+             }
+             body {
+                 background-color: #ddd;
+             }
+         </style>
+     </head>
+   <body>
+       <header style=" margin-left: -8px; ">Todo List</header>
+       <ul type=none class="after">  
+           <li><input type="checkbox"  onclick="todo()">Task 1 </li>
+           <li><input type="checkbox"  onclick="todo()">Task 2 </li>
+          <li><input type="checkbox"  onclick="todo()">Task 3 </li>
+           <li><input type="checkbox"  onclick="todo()">Task 4 </li>
+       </ul>
+       <label for="newTask">New Task</label>
+     <input type="text" id="newTask"/>
+        <button onclick="addTask()">Add Task</button>
+        <script type="text/javascript">
+              addTask = function() {
+               task= document.querySelector('newTask').value;
+                task2 = document.createElement("li");
+                task2.innerHTML = task;
+                document.body.appendChild(task2);
+            }
+        </script>
+   </body>
+ </html>
