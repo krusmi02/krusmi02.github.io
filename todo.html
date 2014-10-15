@@ -22,6 +22,15 @@
              body{
                  background-color: #ddd;
              }
+             .High{
+             color: yellow;
+             }
+             .Medium{
+             color: green;
+             }
+             .Low{
+             color: blue;
+             }
              .done{
                  text-decoration: line-through;
              }
@@ -46,18 +55,9 @@
                i=document.querySelector("#newTask")
                tl= document.querySelector("#tasklist")
                priorityValue = document.querySelector("#priority").value;
-               newli = document.createElement('li');
-               newli.className = priorityValue;
-               cb = document.createElement('input');
-               cb.type = "checkbox";
-               t = document.createTextNode(i.value);
-               v = document.createTextNode(priorityValue);
-               newli.appendChild(v);
-               newli.appendChild(cb);
-               newli.appendChild(t);
-               tl.appendChild(newli);
-               i.value = "";
-               cb.onclick = doneTask;
+               taskText=task.value;
+               insertTaskinTree(taskText,priorityValue);
+               task.value="";
                localSave()
            }
            doneTask = function(){
@@ -73,29 +73,29 @@
                var i;
                allEntries=document.querySelectorAll('li')
                for(i=0; i< allEntries.length; i++){
-                   if (allEntries[i].className !="done"){
+                   if (allEntries[i].className.contains("done")){
                res.push(allEntries[i].innerText);
                }
            }
            localStorage.setItem("todoDatabase",JSON.stringify(res))
            }
            restoreTasks =function(){
-               allEntries=JSON.parse(localStorage.getItem('todoDatabase'))
-               tl=document.querySelector('#tasklist');
+               allTasks=JSON.parse(localStorage.getItem('todoDatabase'))
                for(i=0;i<allTasks.length; i++){
-                   priorityValue =document.querySelector("#priority").value;
-                   newli=document.createElement('li');
-                   newli.className=priorityValue;
+               insertTaskInTree(allTasks[i],"Medium");
+               }
+               }
+            insertTaskInTree=function(taskText,priorityValue){
+               tl=document.querySelector('#tasklist');
+               newli=document.createElement('li');
+                newli.className=priorityValue;
                    cb=document.createElement('input');
                    cb.type="checkbox";
-                   v = document.createTextNode(priorityValue);
-                   r=document.createTextNode(allEntries[i]);
-                   cb.onclick=doneTask;
-                   newli.appendChild(v);
-                   newli.appendChild(cb);
-                   newli.appendChild(r);  
+				   cb.onclick=doneTask;
+				   r=document.createTextNode(taskText);
+				   newli.appendChild(cb);
+                   newli.appendChild(r);
                    tl.appendChild(newli);
-                   localSave()
                    }
            }
            window.onload=restoreTasks;
