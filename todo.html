@@ -14,7 +14,7 @@
              }
              ul{
                  background-color: lightblue;
-                 padding-top: 30px;
+                 padding-top: 32px;
                  padding-bottom: 5px;
                  width: 75%;
                  margin-left: 12.5%;
@@ -81,19 +81,21 @@
            }
            restoreTasks =function(){
                allEntries=JSON.parse(localStorage.getItem('todoDatabase'))
-               taskList=document.querySelector('#tasklist');
+               tl=document.querySelector('#tasklist');
                for(i=0;i<allTasks.length; i++){
-                   task=document.querySelector("#newTask");
                    priorityValue =document.querySelector("#priority").value;
                    newli=document.createElement('li');
                    newli.className=priorityValue;
-                   newcb=document.createElement('input');
-                   newcb.type="checkbox";
-                   newcb.onclick=doneTask;
-                   newli.appendChild(newcb);
+                   cb=document.createElement('input');
+                   cb.type="checkbox";
+                   v = document.createTextNode(priorityValue);
                    r=document.createTextNode(allEntries[i]);
+                   cb.onclick=doneTask;
+                   newli.appendChild(v);
+                   newli.appendChild(cb);
                    newli.appendChild(r);  
-                   taskList.appendChild(newli);
+                   tl.appendChild(newli);
+                   localSave()
                    }
            }
            window.onload=restoreTasks;
