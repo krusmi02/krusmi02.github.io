@@ -50,7 +50,7 @@
        <button onclick="addTask()">Add Task</button>
        </aside>
        <script type="text/javascript">
-           addTask=function(){
+           addTask= function(){
                var newli;
                i=document.querySelector("#newTask")
                tl= document.querySelector("#tasklist")
@@ -97,7 +97,7 @@
                    newli.appendChild(r);
                    tl.appendChild(newli);
                    }
-           }
+           
            window.onload=restoreTasks;
        </script>
    </body>
